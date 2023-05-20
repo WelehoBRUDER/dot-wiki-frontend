@@ -1,0 +1,65 @@
+.wiki-pages {
+  position: relative;
+  display: flex;
+  top: 8rem;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  .wiki-page-entry {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin: 5px;
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    button {
+      margin: 5px;
+      margin-left: 12px;
+      margin-top: 14px;
+      padding: 0;
+      background: none;
+      border: none;
+      display: flex;
+      align-items: center;
+    }
+
+    .page-title {
+      display: flex;
+      font-size: 1.75rem;
+      font-weight: bold;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+    }
+
+    .page-tags,
+    .last-update {
+      margin: 0;
+      padding: 0;
+      display: flex;
+
+      p {
+        margin: 0px 4px;
+        cursor: pointer;
+      }
+    }
+
+    .page-tags,
+    .last-update {
+      p {
+        font-size: 1rem;
+        font-weight: lighter;
+        opacity: 0.75;
+      }
+    }
+  }
+}

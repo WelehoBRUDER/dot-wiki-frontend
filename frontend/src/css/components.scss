@@ -1,0 +1,149 @@
+.input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  label,
+  input {
+    font-size: 1.5rem;
+    background: rgba(15, 15, 15, 0.8);
+    border: 1px solid silver;
+    margin: 4px;
+    padding: 5px;
+  }
+
+  .error {
+    color: red;
+    font-size: 1.5rem;
+    margin: 4px;
+    padding: 5px;
+  }
+}
+
+.animation-wrapper {
+  position: relative;
+  width: 0;
+  button.menu-button {
+    transition: 100ms;
+    position: absolute;
+    border: none;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 4px;
+    padding: 0.25rem;
+    font-size: 1.5rem;
+    box-shadow: 0px 2px 4px 4px rgba(11, 124, 124, 0.75);
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(1.1);
+      top: 5px;
+      left: 1px;
+      box-shadow: 0px 2px 2px 2px rgba(11, 124, 124, 0.75);
+    }
+
+    &:active {
+      filter: brightness(1.15);
+      top: 8px;
+      left: 1px;
+      box-shadow: 0px 1px 1px 1px rgba(11, 124, 124, 0.75);
+    }
+  }
+}
+
+.comment-item {
+  position: relative;
+  width: max-content;
+  height: auto;
+  max-height: 50%;
+  max-width: 90%;
+  margin: 20px;
+  margin-left: 64px;
+  min-height: 70px;
+
+  .comment-item-image {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin: 0;
+    left: -64px;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid #323232;
+    box-sizing: border-box;
+  }
+
+  .comment-item-header {
+    display: flex;
+
+    div {
+      margin-right: 10px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .comment-item-likes {
+    display: flex;
+    align-items: center;
+
+    div {
+      margin-right: 10px;
+      display: flex;
+
+      span {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
+  .editing-comment {
+    text-align: left;
+    margin: 1rem;
+
+    button {
+      padding: 8px;
+      &:hover {
+        color: goldenrod;
+      }
+    }
+  }
+
+  .comment-item-content {
+    p {
+      margin: 3px 0;
+      white-space: pre;
+    }
+
+    textarea {
+      position: relative;
+      background: none;
+      min-width: 100%;
+      min-height: 50px;
+      font-size: 1rem;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      right: 2rem;
+    }
+  }
+
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+
+    i {
+      font-size: 1.1rem;
+
+      &.selected {
+        color: #d3ab1c;
+      }
+    }
+  }
+}

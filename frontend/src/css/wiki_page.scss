@@ -1,0 +1,48 @@
+.wiki-page-content {
+  display: block;
+  text-align: left;
+  overflow: hidden;
+  overflow-y: auto;
+  position: relative;
+  width: 90%;
+  height: max-content;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 8px solid #323232;
+  border-radius: 4px;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  h1,
+  h2,
+  h3,
+  p,
+  span,
+  textarea {
+    margin: 10px;
+    margin-left: 30px;
+  }
+
+  .wmde-markdown {
+    background: none;
+    width: max-content;
+  }
+
+  .comments {
+    display: block;
+    overflow: hidden;
+    overflow-y: auto;
+    width: 95%;
+    height: max-content;
+    margin: 0;
+    padding: 20px;
+    position: relative;
+    left: calc(2.5% - 10px);
+    background: rgba(0, 0, 0, 0.25);
+    top: 25px;
+    border: 2px solid #323232;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+}

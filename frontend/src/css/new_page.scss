@@ -1,0 +1,21 @@
+.new-page {
+  max-height: calc(100% - 120px) !important;
+  overflow: hidden;
+  overflow-y: auto;
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .w-md-editor {
+      width: 80vw;
+      height: 60vh;
+    }
+
+    input[type="submit"] {
+      font-size: 2rem;
+    }
+  }
+}

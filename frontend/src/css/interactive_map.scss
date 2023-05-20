@@ -1,0 +1,13 @@
+.App {
+  .content {
+    max-height: max-content;
+    .worldMap {
+      position: relative;
+      width: 100vw;
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}

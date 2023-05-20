@@ -1,0 +1,62 @@
+.main-header {
+  width: 100vw;
+  height: 60px;
+  position: sticky;
+  left: 0;
+  top: 0;
+  background-size: cover;
+  box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+
+  label,
+  input {
+    font-size: 1.5rem;
+    background: rgba(15, 15, 15, 0.8);
+    border: 1px solid silver;
+    margin: 8px;
+    padding: 5px;
+  }
+
+  .links {
+    width: max-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+
+    a {
+      color: crimson;
+      text-decoration: none;
+      font-size: 1.5rem;
+      margin: 10px;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+        sans-serif;
+      padding: 4px;
+      border: 3px dotted grey;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      border: 3px solid rgb(156, 156, 156);
+    }
+  }
+
+  .logo {
+    position: relative;
+    z-index: 5;
+    margin: 5px;
+    img {
+      height: 60px;
+      filter: drop-shadow(0 0 10px black);
+    }
+  }
+
+  .logo:hover {
+    filter: brightness(1.25);
+  }
+}
